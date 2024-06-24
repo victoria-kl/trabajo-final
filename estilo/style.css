@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 
-*{
+* {
     margin:0;
     padding:0;
 }
@@ -37,16 +37,6 @@ h3 {
     background-color: #4F6F52 
 }
 
-nav ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: nowrap;
-    list-style-type: none;
-    text-decoration: none;
-    padding: 20px;
-}
-
 a {
     text-decoration: none;
     color: #4F6F52;
@@ -59,10 +49,11 @@ a:hover{
 }
 
 .imagen {
-    display:flex; 
+    display: flex;
     justify-content: center;
     margin: 50px;
-    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .primerparrafo {
@@ -74,22 +65,111 @@ a:hover{
     padding: 30px;
 }
 
+.form-control2 {
+    padding: 60px;
+}
+
+.cafecito {
+    text-align: center;
+}
+
 footer {
     background-color: #E8DFCA;
     margin: 0px;
     padding: 30px;
     text-align: right;
+    width: 100%;
 }
 
 @media (max-width: 576px) {
+    header {
+        margin: 0px;
+        margin-bottom: 20px;
+    }
+    
     h1 {
         font-size: 30px;
     }
+    
+    h2 {
+        font-size: 20px;
+        margin: 20px;
+    }
+
+    h3 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
     .imagen {
-        display: none;
+        width: 70%;
+        height: auto;
+        justify-content: center;
+    }
+
+    .primerparrafo {
+        margin: 10px 20px;
+        padding: 10px;
+    }
+
+    footer {
+        height: auto;
+        text-align: right;
+        justify-content: right;
+    }
+
+    footer .social-icons {
+        justify-content: flex-end;
+    }
+    
+    .form-control2 {
+        padding: 0px;
     }
 }
 
-.form-control2 {
-    padding: 60px;
+@media (min-width: 576px) and (max-width: 1024px) {
+    header {
+        margin: 25px;
+    }
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    h3 {
+        font-size: 22px;
+    }
+    
+    p {
+        font-size: 18px;
+    }
+
+    .imagen {
+        width: 85%;
+        height: auto;
+        justify-content: center;
+    }
+
+    .primerparrafo {
+        margin: 20px 225px;
+        padding: 20px;
+    }
+
+    footer {
+        height: auto;
+        text-align: right;
+        justify-content: right;
+    }
+
+    .form-control2 {
+        padding: 0px;
+    }
+
 }

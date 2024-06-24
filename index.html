@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="estilo/style.css">
     <title>Ecológicas</title>
 </head>
@@ -12,33 +14,32 @@
     <header>
         <h1>Ecológicas</h1>
 
-        <nav>
-            <ul>
-                <li>
-                    <a href="index.html">Inicio</a>
-                </li>
-                <li>
-                    <a href="./menu/nosotras.html">Nosotras</a>
-                </li>
-                <li>
-                    <a href="./menu/compostaje.html">Compostaje</a>
-                </li>
-                <li>
-                    <a href="./menu/reciclaje.html">Reciclaje</a>
-                </li>
-                <li>
-                    <a href="./menu/sumate.html">Sumate</a>
-                </li>
-            </ul>
-        </nav>
+        <section>
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                    <a class="nav-link active" aria-current="page" href="./menu/nosotras.html">Nosotras</a>
+                    <a class="nav-link active" aria-current="page" href="./menu/compostaje.html">Compostaje</a>
+                    <a class="nav-link active" aria-current="page" href="./menu/reciclaje.html">Reciclaje</a>
+                    <a class="nav-link active" aria-current="page" href="./menu/sumate.html">Sumate</a>
+                    </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
     </header>
 
     <section>
         <h2>Cuidar nuestro entorno es tarea de todxs</h2>
     </section>
     
-    <div class="imagen">
-        <img src="./img/manos.jpg" alt="Cuatro manos sosteniendo residuos reciclables.">
+    <div>
+        <img class="imagen" src="./img/manos.jpg" alt="Cuatro manos sosteniendo residuos reciclables.">
     </div>
 
     <section class="primerparrafo">
@@ -46,9 +47,11 @@
     </section>
 
     <footer>
-        <a href="http://web.whatsapp.com/" target="_blank"> <img src="./img/whatsapp.svg" alt="Ícono WhatsApp">
-        <a href="https://www.instagram.com/" target="_blank"> <img src="./img/instagram.svg" alt="Ícono Instagram">
-        <a href="http://wwww.facebook.com/" target="_blank"> <img src="./img/facebook.svg" alt="Ícono Facebook">
+        
+        <a href="http://web.whatsapp.com/" target="_blank"> <img src="./img/whatsapp.svg" alt="Ícono WhatsApp"></li>
+        <a href="https://www.instagram.com/" target="_blank"> <img src="./img/instagram.svg" alt="Ícono Instagram"></li>
+        <a href="http://wwww.facebook.com/" target="_blank"> <img src="./img/facebook.svg" alt="Ícono Facebook"></li>
+
     </footer>
 
 </body>
