@@ -32,6 +32,10 @@ h3 {
     color: #1A4D2E;
 }
 
+h4 {
+    padding: 10px 0px;
+}
+
 .fondo-seccion {
     color: #E8DFCA;
     background-color: #4F6F52 
@@ -63,6 +67,10 @@ a:hover{
     border-color: #4F6F52;
     background-color: #E8DFCA;
     padding: 30px;
+}
+
+.segundoparrafo{
+    text-align: left;
 }
 
 .form-control2 {

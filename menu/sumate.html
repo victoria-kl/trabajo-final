@@ -39,9 +39,66 @@
     <p>¡Sumate a la comunidad! Tu aporte es muy importante para hacer crecer este proyecto</p>
     </section>
 
+
     <section class="primerparrafo">
+        <h3>Sumate a nuestros talleres:</h3>
+        <p>Ingresá tus datos en el taller en el cual quieras participar.</p>
+            <h4>1. Taller de Compostaje</h4>
+                <ul class="segundoparrafo">
+                    <li>Días: Lunes y Miércoles</li>
+                    <li>Horario: 17.30</li>
+                    <li>Duración del taller: 2 horas por encuentro</li>
+                    <li>Cantidad de encuentros: 8</li>
+                    <li>Descripción: Aprende a transformar residuos orgánicos en compost nutritivo.</li>
+                    <li>Temas: Materiales compostables, técnicas de compostaje, mantenimiento.</li>
+                    <li>Objetivos: Reducir residuos y mejorar el suelo mediante compostaje en casa.</li>
+                    <li>Dirección: Calle Falsa 123</li>
+                </ul>
+
+            <h4>2. Taller de Reciclaje</h4>
+                <ul class="segundoparrafo">
+                    <li>Días: Martes y Jueves</li>
+                    <li>Horario: 17.30</li>
+                    <li>Duración del taller: 2 horas por encuentro</li>
+                    <li>Cantidad de encuentros: 8</li>
+                    <li>Descripción: Conoce cómo separar y reciclar materiales correctamente.</li>
+                    <li>Temas: Clasificación de materiales, preparación para reciclaje, reducción de residuos.</li>
+                    <li>Objetivos: Mejorar la separación de reciclables y reducir la generación de desechos.</li>
+                    <li>Dirección: Calle Falsa 123</li>
+                </ul>
+
+            <h4>3. Ecología para niñes</h4>
+                <ul class="segundoparrafo">
+                    <li>Días: Sábado</li>
+                    <li>Horario: 11.00</li>
+                    <li>Duración del taller: 1 hora y media</li>
+                    <li>Cantidad de encuentros: 16</li>
+                    <li>Descripción: Introduce a les niñes en conceptos básicos de ecología a través de juegos y actividades.</li>
+                    <li>Temas: Ecosistemas, conservación, proyectos prácticos.</li>
+                    <li>Objetivos: Desarrollar una conciencia ambiental y fomentar el amor por la naturaleza en les niñes.</li>
+                    <li>Dirección: Calle Falsa 123</li>
+                </ul>
+                
+<div>
+    <form id="alumnosForm"> 
+    <input type="text" id="nombre" placeholder="Nombre">
+    <input type="number" id="edad" placeholder="Edad">
+    <input type="email" id="email" placeholder="Email">
+    <select id = "taller" name = "nombre del taller">
+        <option value="1">Taller de compostaje</option>
+        <option value="2">Taller de reciclaje</option>
+        <option value="3">Ecología para niñes</option>
+    </select>
+    <button class="boton" type="submit">Enviar</button>
+    </form>
+    <!-- <ul id="alumnosList"></ul> -->
+</div>
+    </section>
+
+    <section class="primerparrafo">
+        <h3>¡Dejanos tu mensaje!</h3>
         <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Correo electrónico</label>
+            <label for="exampleFormControlInput1" class="form-label">Correo electrónico:</label>
             <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
         </div>
         <div class="mb-3">
@@ -57,6 +114,8 @@
         <a href="https://www.instagram.com/" target="_blank"> <img src="../img/instagram.svg" alt="Ícono Instagram">
         <a href="http://wwww.facebook.com/" target="_blank"> <img src="../img/facebook.svg" alt="Ícono Facebook">
     </footer>
+
+    <script src="../js/alumnos.js"></script>
 
 </body>
 

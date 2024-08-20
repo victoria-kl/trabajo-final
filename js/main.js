@@ -10,8 +10,8 @@ console.log("El nombre ingresado es: " + nombre)
 alert ("¡Bienvenida a Ecológicas, " + nombre + "!")
 
 // Escribimos los nombres de las profesoras que dictarán los cursos
-// let profesoras = ['Karen Müller', 'Victoria Klein', 'Florencia Spañol'];
-// console.log(profesoras) 
+let profesoras = ['Karen Müller', 'Victoria Klein', 'Florencia Spañol'];
+console.log(profesoras) 
 
 // Agregamos una profesora nueva que se suma al staff
 let bd= `[
