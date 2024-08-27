@@ -18,18 +18,6 @@ let talleres = `[
   //Convertir la cadena JSON a un objeto JavaScript
 let alumnos = JSON.parse(talleres); //JSON.parse(localStorage.getItem('productos')) ||
 
-// function mostrarAlumnos() {// Función para mostrar productos en la página
-//     const listaAlumnos = document.getElementById('alumnosList');//insertAdjacentHTML
-//     listaAlumnos.innerHTML = ''; // Limpiar la lista antes de actualizar
-
-//     alumnos.forEach(alumno => {
-//         const item = document.createElement('li');
-//         item.textContent = `Nombre: ${alumno.nombre}, Edad: ${alumno.edad}, Email: ${alumno.email}, Taller: ${alumno.taller}`;
-//         listaAlumnos.appendChild(item);
-//     });
-// }
-// mostrarAlumnos();
-
   // Incorporar un nuevo alumno desde el formulario correspondiente a cada taller
 document.getElementById('alumnosForm').addEventListener('submit', function(event) {
 event.preventDefault();
@@ -59,6 +47,6 @@ let alumnos = JSON.parse(localStorage.getItem('alumnos')) || [];
     // // Actualizar
     // mostrarAlumnos();
 
-    // // Limpiar el formulario
-    // document.getElementById('alumnosForm').reset();
+// Limpiar el formulario
+document.getElementById('alumnosForm').reset();
 });

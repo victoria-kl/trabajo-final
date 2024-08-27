@@ -34,16 +34,17 @@
         
     </header>
 
-    <section class="primerparrafo">
+    <section>
     <h2>Sumate</h2>
-    <p>¡Sumate a la comunidad! Tu aporte es muy importante para hacer crecer este proyecto</p>
     </section>
 
 
     <section class="primerparrafo">
         <h3>Sumate a nuestros talleres:</h3>
         <p>Ingresá tus datos en el taller en el cual quieras participar.</p>
-            <h4>1. Taller de Compostaje</h4>
+
+        <div class="talleres">
+            <h4 class="titulo-talleres">1. Taller de Compostaje</h4>
                 <ul class="segundoparrafo">
                     <li>Días: Lunes y Miércoles</li>
                     <li>Horario: 17.30</li>
@@ -54,8 +55,10 @@
                     <li>Objetivos: Reducir residuos y mejorar el suelo mediante compostaje en casa.</li>
                     <li>Dirección: Calle Falsa 123</li>
                 </ul>
+        </div>
 
-            <h4>2. Taller de Reciclaje</h4>
+        <div class="talleres">
+            <h4 class="titulo-talleres">2. Taller de Reciclaje</h4>
                 <ul class="segundoparrafo">
                     <li>Días: Martes y Jueves</li>
                     <li>Horario: 17.30</li>
@@ -66,56 +69,75 @@
                     <li>Objetivos: Mejorar la separación de reciclables y reducir la generación de desechos.</li>
                     <li>Dirección: Calle Falsa 123</li>
                 </ul>
+        </div>
 
-            <h4>3. Ecología para niñes</h4>
+        <div class="talleres">
+            <h4 class="titulo-talleres">3. Taller de coctelería botánica</h4>
                 <ul class="segundoparrafo">
                     <li>Días: Sábado</li>
-                    <li>Horario: 11.00</li>
+                    <li>Horario: 19.00</li>
                     <li>Duración del taller: 1 hora y media</li>
                     <li>Cantidad de encuentros: 16</li>
-                    <li>Descripción: Introduce a les niñes en conceptos básicos de ecología a través de juegos y actividades.</li>
-                    <li>Temas: Ecosistemas, conservación, proyectos prácticos.</li>
-                    <li>Objetivos: Desarrollar una conciencia ambiental y fomentar el amor por la naturaleza en les niñes.</li>
+                    <li>Descripción: Explora cómo los ingredientes naturales transforman tus bebidas. Aprende a crear cócteles únicos con hierbas, flores y frutas frescas.</li>
+                    <li>Temas: Coctelería con enfoque en ingredientes botánicos.</li>
+                    <li>Objetivos: Conocer y utilizar ingredientes botánicos en cocteles y degustarlos.</li>
                     <li>Dirección: Calle Falsa 123</li>
                 </ul>
-                
+        </div>
+
 <div>
-    <form id="alumnosForm"> 
+    <form class="formulario-comun" id="alumnosForm">
     <input type="text" id="nombre" placeholder="Nombre">
-    <input type="number" id="edad" placeholder="Edad">
-    <input type="email" id="email" placeholder="Email">
+    <input type="number" id="edad" placeholder="Edad" required>
+    <input type="email" id="email" placeholder="Email" required>
     <select id = "taller" name = "nombre del taller">
         <option value="1">Taller de compostaje</option>
         <option value="2">Taller de reciclaje</option>
-        <option value="3">Ecología para niñes</option>
+        <option value="3">Taller de coctelería botánica</option>
     </select>
     <button class="boton" type="submit">Enviar</button>
     </form>
-    <!-- <ul id="alumnosList"></ul> -->
 </div>
-    </section>
 
-    <section class="primerparrafo">
+<div class="errores">
+    <ul></ul>
+</div>
+</section>
+
+<section class="primerparrafo">
+    <h3>Descubrí la especialidad de la coctelería botánica</h3>
+        <div>
+        <p>En Ecológicas, creemos en la magia de la naturaleza y en cómo puede transformar nuestras experiencias cotidianas. Te invitamos a descubrir el arte de crear cócteles únicos con ingredientes frescos de nuestra huerta ecológica. Aprendé a mezclar hierbas, frutas y flores para elaborar bebidas que sorprendan y deleiten, todo mientras celebramos la sostenibilidad y el respeto por la naturaleza. ¡Podés probarlos en los encuentros mensuales organizados por parte del Taller de coctelería botánica!</p>
+        </div>
+        <div id="cocktail-container"></div>
+</section>
+
+<div class="primerparrafo"> <!--nuevo formulario-->
+    <form class="formulario-comun contacto">
         <h3>¡Dejanos tu mensaje!</h3>
-        <div class="mb-3">
-            <label for="exampleFormControlInput1" class="form-label">Correo electrónico:</label>
-            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
-        </div>
-        <div class="mb-3">
-            <label for="exampleFormControlTextarea1" class="form-label">¡Dejanos tu mensaje!</label>
-            <textarea class="form-control2" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-    </section>
+        <input id="emailForm" type="email" placeholder="Email" required>
+        <textarea id="mensaje" name="mensaje" rows="4" cols="70" placeholder="Escribe tu mensaje aquí..."></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</div>
 
-    <p class="cafecito"><a href="https://cafecito.app/">Hacé click acá para donar un cafecito</a></p>
+    <p class="cafecito"><a href="https://cafecito.app/">Hacé click acá para donar un cafecito ☕</a></p>
 
     <footer>
-        <a href="http://web.whatsapp.com/" target="_blank"> <img src="../img/whatsapp.svg" alt="Ícono WhatsApp">
-        <a href="https://www.instagram.com/" target="_blank"> <img src="../img/instagram.svg" alt="Ícono Instagram">
-        <a href="http://wwww.facebook.com/" target="_blank"> <img src="../img/facebook.svg" alt="Ícono Facebook">
+        <div class="footer-left">
+            <p>info@ingenias.com</p>
+            <p>+54 11 1234 5678</p>
+            <p>Calle Falsa 123, La Plata</p>
+        </div>    
+        <div class="footer-right">
+            <a href="http://web.whatsapp.com/" target="_blank"> <img src="../img/whatsapp.svg" alt="Ícono WhatsApp"></li>
+            <a href="https://www.instagram.com/" target="_blank"> <img src="../img/instagram.svg" alt="Ícono Instagram"></li>
+            <a href="http://wwww.facebook.com/" target="_blank"> <img src="../img/facebook.svg" alt="Ícono Facebook"></li>
+        </div>
     </footer>
 
     <script src="../js/alumnos.js"></script>
+    <script src="../js/api.js"></script>
 
 </body>
 

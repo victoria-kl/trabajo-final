@@ -30,10 +30,13 @@ h2 {
 
 h3 {
     color: #1A4D2E;
+    text-align: center;
 }
 
-h4 {
-    padding: 10px 0px;
+.titulo-talleres {
+    padding: 10px 10px;
+    background-color: #4F6F52;
+    color: #F5EFE6;
 }
 
 .fondo-seccion {
@@ -60,21 +63,132 @@ a:hover{
     height: auto;
 }
 
+.ciclo-imagen-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.ciclo-imagen {
+    max-width: 100%;
+    height: auto;
+}
+
+.image-gallery {
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+
+.image-item {
+    width: 450px; /* Define el ancho fijo */
+    height: 450px; /* Define el alto fijo */
+}
+
+.image-item img {
+    width: 100%; /* La imagen se adapta al ancho del contenedor */
+    height: 100%; /* La imagen se adapta al alto del contenedor */
+    object-fit: cover; /* Ajusta la imagen para cubrir el contenedor sin deformarse */
+}
+
+p {
+    text-align: justify;
+}
+
 .primerparrafo {
-    text-align: center;
-    margin: 30px 325px;
+    margin: 30px 225px;
     border-style: dotted;
     border-color: #4F6F52;
     background-color: #E8DFCA;
-    padding: 30px;
+    padding: 50px;
 }
 
 .segundoparrafo{
     text-align: left;
 }
 
+.talleres{
+    background-color: #F5EFE6;
+    border-style: solid;
+    border-color: #4F6F52;
+    margin: 30px 10px 30px 10px;
+}
+
 .form-control2 {
     padding: 60px;
+}
+
+#emailForm{
+    margin: 20px 1px 10px 1px;
+}
+#edadForm{
+    margin: 20px 5px 10px 5px;
+}
+#nombreForm{
+    margin: 20px 1px 10px 1px;
+}
+
+#cocktail-container{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.coctel-titulo {
+    font-size: 15px;
+    text-align: center;
+}
+
+.coctel-texto {
+    margin: 30px 130px;
+}
+
+.coctel-img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+/* Estilos comunes para ambos formularios */
+.formulario-comun {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* Estilos para los elementos del formulario */
+.formulario-comun input,
+.formulario-comun textarea,
+.formulario-comun select,
+.formulario-comun button {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.formulario-comun textarea {
+    resize: vertical;
+}
+
+.formulario-comun button {
+    background-color: #4F6F52;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.formulario-comun button:hover {
+    background-color: #4F6F52;
 }
 
 .cafecito {
@@ -83,13 +197,34 @@ a:hover{
 
 footer {
     background-color: #E8DFCA;
-    margin: 0px;
+    margin: 0;
     padding: 30px;
-    text-align: right;
     width: 100%;
+    display: flex;
+    justify-content: space-between; /* Distribuye las dos secciones */
+    align-items: center; /* Alinea verticalmente al centro */
 }
 
-@media (max-width: 576px) {
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    display: flex; /* Aplica flexbox solo en la sección derecha */
+    justify-content: flex-end; /* Alinea el contenido de .footer-right a la derecha */
+    flex-grow: 1; /* Permite que .footer-right ocupe todo el espacio restante */
+}
+
+.footer-right a {
+    margin-left: 10px; /* Espaciado entre los iconos */
+}
+
+.footer-right img {
+    width: 24px; /* Ajusta el tamaño de los iconos según sea necesario */
+    height: 24px;
+}
+
+@media (max-width: 600px) {
     header {
         margin: 0px;
         margin-bottom: 20px;
@@ -124,10 +259,29 @@ footer {
     }
 
     footer {
-        height: auto;
-        text-align: right;
-        justify-content: right;
+        flex-direction: column; /* Cambia a una columna en pantallas pequeñas */
+        align-items: flex-start; /* Alinea elementos al inicio */
+        padding: 20px; /* Ajusta el padding para pantallas pequeñas */
     }
+
+    .footer-left, .footer-right {
+        width: 100%; /* Ocupa todo el ancho disponible */
+        margin-bottom: 10px; /* Espaciado entre secciones */
+    }
+
+    .footer-right {
+        justify-content: flex-start; /* Alinea los iconos a la izquierda en pantallas pequeñas */
+    }
+
+    .footer-right a {
+        margin-left: 0; /* Elimina el espaciado entre iconos */
+        margin-right: 10px; /* Agrega espaciado solo a la derecha de los iconos */
+    }
+
+    .footer-right img {
+        width: 20px; /* Reduce el tamaño de los iconos en pantallas pequeñas */
+        height: 20px;
+    }
 
     footer .social-icons {
         justify-content: flex-end;
@@ -136,9 +290,35 @@ footer {
     .form-control2 {
         padding: 0px;
     }
+
+    #cocktail-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .coctel-titulo {
+        font-size: 8px;
+        text-align: center;
+    }
+
+    .coctel-img {
+        border-radius: 50%;
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+    #mensaje {
+        width: 275px;
+    }
 }
 
-@media (min-width: 576px) and (max-width: 1024px) {
+@media (min-width: 600px) and (max-width: 1024px) {
     header {
         margin: 25px;
     }
@@ -166,18 +346,37 @@ footer {
     }
 
     .primerparrafo {
-        margin: 20px 225px;
+        margin: 20px 50px;
         padding: 20px;
-    }
-
-    footer {
-        height: auto;
-        text-align: right;
-        justify-content: right;
     }
 
     .form-control2 {
         padding: 0px;
     }
 
+    #cocktail-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .coctel-titulo {
+        font-size: 10px;
+        text-align: center;
+    }
+
+    .coctel-img {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+
+    #mensaje {
+        width: 375px;
+    }
 }
